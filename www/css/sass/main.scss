@@ -1,0 +1,35 @@
+@import "bourbon/bourbon";
+
+body{
+	font-weight: normal;
+	font-size: 14px;
+	min-width: 320px;
+	-webkit-font-smoothing: antialised;
+	color: #000;
+}
+
+//variables 
+
+$color_b: #0c3883;
+header{
+	.top-nav-header{
+		height: 191px;
+		background-color: $color_b;
+	}
+	
+	.bottom-vawe-line{
+		height: 21px;
+		background-image: url("../../img/wave-bg.png");
+		background-repeat: repeat-x;
+		position: relative;
+		text-align: center;
+		span{
+			display: inline-block;
+			padding: 0 25px 0 25px;
+			background-color: #fff;
+			position: relative;
+			top: 6px;
+			font-size: 18px;
+		}
+	}
+}

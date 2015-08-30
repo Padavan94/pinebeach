@@ -1,0 +1,25 @@
+body {
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  -webkit-font-smoothing: antialised;
+  color: #000; }
+
+header .top-nav-header {
+  height: 191px;
+  background-color: #0c3883; }
+header .bottom-vawe-line {
+  height: 21px;
+  background-image: url("../../img/wave-bg.png");
+  background-repeat: repeat-x;
+  position: relative;
+  text-align: center; }
+  header .bottom-vawe-line span {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+    background-color: #fff;
+    position: relative;
+    top: 6px;
+    font-size: 18px; }
+
+/*# sourceMappingURL=main.css.map */
