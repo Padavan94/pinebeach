@@ -1,5 +1,5 @@
 @import "bourbon/bourbon";
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,800,400);
 body{
 	font-weight: normal;
 	font-size: 14px;
@@ -12,6 +12,7 @@ body{
 
 $color_b: #0c3883;
 header{
+	margin-bottom: 60px;
 	.top-nav-header{
 		height: 191px;
 		background-color: $color_b;
@@ -31,5 +32,40 @@ header{
 			top: 6px;
 			font-size: 18px;
 		}
+	}
+}
+//services_page_content
+.content-wrapper{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #4e4d4d;
+	.service-row{
+		margin-bottom: 40px;
+	}
+	.services-boxes{
+		position: relative;
+		.service-box{
+			text-align: center;
+		}
+		.service-icon{
+			height: 103px;
+			width: 103px;
+			background-color: $color_b;
+			border-radius: 50%;
+			border: 7px solid #bfbfbf;
+			margin: 0px auto;
+			position: relative;
+			img{
+				position: absolute;
+				margin: auto;
+				left: 0; right: 0; bottom: 0; top: 0;
+			}
+		}
+		span{
+			display: inline-block;
+			width: 210px;
+			margin-top: 15px;
+		}
+
 	}
 }
