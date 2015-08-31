@@ -11,6 +11,27 @@ header {
   header .top-nav-header {
     height: 191px;
     background-color: #0c3883; }
+    header .top-nav-header nav {
+      position: relative;
+      text-align: center;
+      margin-top: 50px;
+      padding-left: 15px; }
+      header .top-nav-header nav a {
+        padding: 0 16px 0 16px;
+        display: inline-block;
+        color: #fff;
+        position: relative; }
+        header .top-nav-header nav a svg {
+          width: 15px; }
+          header .top-nav-header nav a svg path {
+            fill: #fff !important; }
+        header .top-nav-header nav a:first-child {
+          top: 10px; }
+        header .top-nav-header nav a:last-child {
+          top: 34px; }
+        header .top-nav-header nav a:nth-child(4) {
+          top: -29px;
+          padding: 0 50px 0 50px; }
   header .bottom-vawe-line {
     height: 21px;
     background-image: url("../../img/wave-bg.png");
@@ -54,5 +75,169 @@ header {
       display: inline-block;
       width: 210px;
       margin-top: 15px; }
+
+.blue-nav-section {
+  height: 325px;
+  background-color: #0c3883;
+  text-align: center;
+  padding-top: 150px; }
+  .blue-nav-section nav {
+    display: block;
+    position: relative;
+    text-align: center; }
+    .blue-nav-section nav::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .blue-nav-section nav .two-waves-img {
+      width: 96px;
+      height: 26px;
+      background-image: url("../../img/2waves.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 50%;
+      margin-left: -48px;
+      top: -70px; }
+    .blue-nav-section nav .nav-section {
+      width: 20%;
+      float: left; }
+      .blue-nav-section nav .nav-section::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .blue-nav-section nav .nav-section .img-wrap {
+        height: 60px; }
+      .blue-nav-section nav .nav-section a {
+        color: #fff;
+        text-decoration: underline;
+        display: block;
+        height: 100%;
+        width: 100%; }
+        .blue-nav-section nav .nav-section a:hover {
+          background-color: #06dfff;
+          background-image: -webkit-radial-gradient(#06dfff, #0c3883 70%, #0c3883 100%);
+          background-image: radial-gradient(  #06dfff, #0c3883 70%, #0c3883 100%); }
+      .blue-nav-section nav .nav-section span {
+        display: block;
+        text-align: center; }
+
+.nav-bottom-section {
+  height: 265px;
+  padding-top: 90px;
+  background-color: #fff;
+  border-bottom: 1px solid #474747;
+  background-image: url("../../img/wave1-bg.png");
+  background-repeat: repeat-x;
+  background-position: center 109px;
+  position: relative;
+  text-align: center; }
+  .nav-bottom-section nav {
+    display: block; }
+    .nav-bottom-section nav::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .nav-bottom-section .nav-section {
+    float: left;
+    width: 20%; }
+    .nav-bottom-section .nav-section::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .nav-bottom-section .nav-section .img-wrap {
+      height: 60px;
+      width: 130px;
+      margin: 0px auto;
+      background-color: #fff; }
+    .nav-bottom-section .nav-section span {
+      display: block; }
+    .nav-bottom-section .nav-section a {
+      color: #4e4d4d; }
+
+footer {
+  color: #444343;
+  padding-bottom: 27px; }
+  footer .f-center {
+    text-align: center;
+    padding-top: 10px; }
+  footer .f-left {
+    text-align: left;
+    padding-top: 24px; }
+  footer .f-right {
+    text-align: right;
+    padding-top: 24px; }
+
+.news-page-wrapper .news-box {
+  padding-bottom: 20px; }
+  .news-page-wrapper .news-box::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .news-page-wrapper .news-box .time {
+    font-size: 12px;
+    color: #8c8c8c;
+    display: inline-block;
+    padding-left: 23px;
+    background-image: url("../../img/time-ico.png");
+    background-repeat: no-repeat;
+    background-position: left 24%;
+    height: 20px;
+    line-height: 20px; }
+  .news-page-wrapper .news-box h3 {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 2px;
+    font-weight: bold; }
+  .news-page-wrapper .news-box a {
+    color: #0c3883;
+    text-decoration: underline; }
+    .news-page-wrapper .news-box a:hover {
+      text-decoration: none; }
+  .news-page-wrapper .news-box img {
+    margin: 0 18px 20px 0;
+    float: left;
+    display: block; }
+    .news-page-wrapper .news-box img::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .news-page-wrapper .news-box .inner-news-box {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c7c7c7;
+    position: relative; }
+    .news-page-wrapper .news-box .inner-news-box .next {
+      position: absolute;
+      right: 0;
+      bottom: -18px;
+      display: inline-block;
+      background-color: #fff;
+      padding-left: 28px;
+      width: 90px;
+      height: 33px;
+      line-height: 33px;
+      background-image: url("../../img/btn-wave.png");
+      background-repeat: no-repeat;
+      background-position: right center; }
+      .news-page-wrapper .news-box .inner-news-box .next a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px; }
+      .news-page-wrapper .news-box .inner-news-box .next i {
+        margin-left: 3px; }
+.news-page-wrapper .pagnation {
+  font-size: 16px;
+  padding-bottom: 50px; }
+  .news-page-wrapper .pagnation i {
+    color: #0c3883;
+    font-weight: bold;
+    font-size: 18px; }
+.news-page-wrapper .pagnation-bot a {
+  color: #ababab;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-right: 22px; }
+
+/*contacts_page_content*/
 
 /*# sourceMappingURL=main.css.map */
