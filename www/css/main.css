@@ -1,5 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,800,400);
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("/fonts/Georgia.woff2") format("woff2"), url("/fonts/Georgia.woff") format("woff"), url("/fonts/Georgia.ttf") format("truetype"), url("/fonts/Georgia.svg#Georgia") format("svg"); }
+@font-face {
+  font-family: "Georgia-reg";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/GEORGIAB.eot?#iefix") format("embedded-opentype"), url("/fonts/GEORGIAB.woff2") format("woff2"), url("/fonts/GEORGIAB.woff") format("woff"), url("/fonts/GEORGIAB.ttf") format("truetype"), url("/fonts/GEORGIAB.svg#Georgia-reg") format("svg"); }
+@font-face {
+  font-family: "Georgia-ital2";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/GEORGIAI.eot?#iefix") format("embedded-opentype"), url("/fonts/GEORGIAI.woff2") format("woff2"), url("/fonts/GEORGIAI.woff") format("woff"), url("/fonts/GEORGIAI.ttf") format("truetype"), url("/fonts/GEORGIAI.svg#Georgia-ital2") format("svg"); }
+@font-face {
+  font-family: "Georgia-ital";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/GEORGIAZ.eot?#iefix") format("embedded-opentype"), url("/fonts/GEORGIAZ.woff2") format("woff2"), url("/fonts/GEORGIAZ.woff") format("woff"), url("/fonts/GEORGIAZ.ttf") format("truetype"), url("/fonts/GEORGIAZ.svg#Georgia-ital") format("svg"); }
 body {
+  font-family: "Georgia";
   font-weight: normal;
   font-size: 14px;
   min-width: 320px;
@@ -25,6 +46,8 @@ header {
           width: 15px; }
           header .top-nav-header nav a svg path {
             fill: #fff !important; }
+        header .top-nav-header nav a:hover {
+          text-decoration: none; }
         header .top-nav-header nav a:first-child {
           top: 10px; }
         header .top-nav-header nav a:last-child {
@@ -76,20 +99,20 @@ header {
       width: 210px;
       margin-top: 15px; }
 
-.blue-nav-section {
+.blue-nav-section, .white-nav-section {
   height: 325px;
   background-color: #0c3883;
   text-align: center;
   padding-top: 150px; }
-  .blue-nav-section nav {
+  .blue-nav-section nav, .white-nav-section nav {
     display: block;
     position: relative;
     text-align: center; }
-    .blue-nav-section nav::after {
+    .blue-nav-section nav::after, .white-nav-section nav::after {
       clear: both;
       content: "";
       display: table; }
-    .blue-nav-section nav .two-waves-img {
+    .blue-nav-section nav .two-waves-img, .white-nav-section nav .two-waves-img {
       width: 96px;
       height: 26px;
       background-image: url("../../img/2waves.png");
@@ -99,28 +122,31 @@ header {
       left: 50%;
       margin-left: -48px;
       top: -70px; }
-    .blue-nav-section nav .nav-section {
+    .blue-nav-section nav .nav-section, .white-nav-section nav .nav-section {
       width: 20%;
       float: left; }
-      .blue-nav-section nav .nav-section::after {
+      .blue-nav-section nav .nav-section::after, .white-nav-section nav .nav-section::after {
         clear: both;
         content: "";
         display: table; }
-      .blue-nav-section nav .nav-section .img-wrap {
+      .blue-nav-section nav .nav-section .img-wrap, .white-nav-section nav .nav-section .img-wrap {
         height: 60px; }
-      .blue-nav-section nav .nav-section a {
+      .blue-nav-section nav .nav-section a, .white-nav-section nav .nav-section a {
         color: #fff;
-        text-decoration: underline;
+        text-decoration: none;
         display: block;
         height: 100%;
         width: 100%; }
-        .blue-nav-section nav .nav-section a:hover {
-          background-color: #06dfff;
-          background-image: -webkit-radial-gradient(#06dfff, #0c3883 70%, #0c3883 100%);
-          background-image: radial-gradient(  #06dfff, #0c3883 70%, #0c3883 100%); }
-      .blue-nav-section nav .nav-section span {
+      .blue-nav-section nav .nav-section span, .white-nav-section nav .nav-section span {
         display: block;
         text-align: center; }
+
+.white-nav-section {
+  background-color: #fff; }
+  .white-nav-section nav .nav-section a {
+    color: #4e4d4d; }
+  .white-nav-section nav .two-waves-img {
+    background-image: url("../../img/2waves-b.png"); }
 
 .nav-bottom-section {
   height: 265px;
@@ -154,6 +180,8 @@ header {
       display: block; }
     .nav-bottom-section .nav-section a {
       color: #4e4d4d; }
+      .nav-bottom-section .nav-section a:hover {
+        text-decoration: none; }
 
 footer {
   color: #444343;
@@ -239,5 +267,184 @@ footer {
   margin-right: 22px; }
 
 /*contacts_page_content*/
+.contact-wrapper .nav-bottom-section {
+  border-bottom: 0; }
+.contact-wrapper .left-form {
+  font-size: 16px;
+  padding-bottom: 37px; }
+  .contact-wrapper .left-form span {
+    font-weight: bold;
+    font-style: italic;
+    color: #0c3883;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-family: "Georgia-ital"; }
+  .contact-wrapper .left-form .text-input, .contact-wrapper .left-form .textarea-input {
+    margin-bottom: 14px; }
+    .contact-wrapper .left-form .text-input input, .contact-wrapper .left-form .text-input textarea, .contact-wrapper .left-form .textarea-input input, .contact-wrapper .left-form .textarea-input textarea {
+      height: 42px;
+      line-height: 42px;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 0 17px 0 17px;
+      border: 1px solid #bcbcbc;
+      color: #bcbcbc;
+      outline: none; }
+  .contact-wrapper .left-form .textarea-input textarea {
+    padding-top: 5px;
+    resize: none;
+    height: 243px;
+    outline: none; }
+  .contact-wrapper .left-form .submit-input input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 138px;
+    height: 46px;
+    background-image: url("../../img/btn-wave2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Georgia-ital2";
+    font-size: 16px;
+    outline: none; }
+.contact-wrapper .right-box .location {
+  padding-left: 27px;
+  background-image: url("../../img/markmini.png");
+  background-position: left 18%;
+  background-repeat: no-repeat;
+  width: 259px;
+  color: #4e4d4d;
+  margin-bottom: 25px; }
+.contact-wrapper .right-box .phone {
+  padding-left: 27px;
+  background-image: url("../../img/phonemini.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0c3883;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 33px; }
+.contact-wrapper .right-box .website {
+  padding-left: 27px;
+  background-image: url("../../img/chain.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #4e4d4d; }
+
+#map {
+  height: 356px;
+  width: 100%; }
+
+.main-text-wrapper {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  background-image: url("../../img/text-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main-text-wrapper .text-box {
+    width: 975px;
+    height: 294px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    padding: 60px 80px 0 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    border-top: none; }
+    .main-text-wrapper .text-box:after, .main-text-wrapper .text-box:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 342px;
+      background-color: #fff;
+      top: -3px;
+      right: -3px; }
+    .main-text-wrapper .text-box:before {
+      left: -3px; }
+    .main-text-wrapper .text-box img {
+      position: absolute;
+      top: -24px;
+      left: 480.4px;
+      margin-left: -116px; }
+
+.main-page-header {
+  margin-bottom: 0px;
+  height: 755px;
+  background-image: url("../../img/bgh.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .main-page-header .inner-nav {
+    padding-top: 65px;
+    text-align: center; }
+    .main-page-header .inner-nav a {
+      padding: 11px 16px;
+      color: #4e4d4d;
+      margin-left: -3px; }
+      .main-page-header .inner-nav a:hover {
+        text-decoration: none;
+        color: #fff; }
+    .main-page-header .inner-nav a, .main-page-header .inner-nav .button-group {
+      display: inline-block; }
+    .main-page-header .inner-nav .button-group {
+      background-color: #fff;
+      padding: 0px 27px 0px 27px; }
+    .main-page-header .inner-nav .logo {
+      position: relative;
+      top: -29px; }
+  .main-page-header .yacht-marin-block {
+    width: 364px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-top: none;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 224px auto; }
+    .main-page-header .yacht-marin-block h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: lighter;
+      color: #fff;
+      font-size: 28px;
+      display: inline;
+      margin: 0;
+      padding: 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); }
+    .main-page-header .yacht-marin-block:after, .main-page-header .yacht-marin-block:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 128px;
+      background-color: #fff;
+      top: -2px;
+      right: 0;
+      box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3); }
+    .main-page-header .yacht-marin-block:before {
+      left: -2px; }
+    .main-page-header .yacht-marin-block img {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      margin-left: -36px; }
 
 /*# sourceMappingURL=main.css.map */
