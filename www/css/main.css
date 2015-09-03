@@ -45,13 +45,20 @@ header {
         header .top-nav-header nav a svg {
           width: 15px; }
           header .top-nav-header nav a svg path {
-            fill: #fff !important; }
-        header .top-nav-header nav a:hover {
-          text-decoration: none; }
+            fill: #fff; }
+        header .top-nav-header nav a:hover, header .top-nav-header nav a:focus {
+          text-decoration: none;
+          color: #00f6ff; }
         header .top-nav-header nav a:first-child {
           top: 10px; }
+        header .top-nav-header nav a:first-child:hover svg path, header .top-nav-header nav a:first-child:focus svg path {
+          fill: #00f6ff; }
         header .top-nav-header nav a:last-child {
           top: 34px; }
+          header .top-nav-header nav a:last-child svg path {
+            fill: #fff !important; }
+        header .top-nav-header nav a:last-child:hover svg path, header .top-nav-header nav a:last-child:focus svg path {
+          fill: #00f6ff !important; }
         header .top-nav-header nav a:nth-child(4) {
           top: -29px;
           padding: 0 50px 0 50px; }
@@ -71,14 +78,27 @@ header {
 
 .content-wrapper {
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  color: #4e4d4d; }
+  font-weight: bold; }
   .content-wrapper .service-row {
     margin-bottom: 40px; }
   .content-wrapper .services-boxes {
     position: relative; }
+    .content-wrapper .services-boxes a {
+      color: #4e4d4d;
+      display: inline-block;
+      width: 48%; }
+      .content-wrapper .services-boxes a::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .content-wrapper .services-boxes a:hover, .content-wrapper .services-boxes a:focus {
+        color: #4e4d4d; }
     .content-wrapper .services-boxes .service-box {
       text-align: center; }
+      .content-wrapper .services-boxes .service-box::after {
+        clear: both;
+        content: "";
+        display: table; }
     .content-wrapper .services-boxes .service-icon {
       height: 103px;
       width: 103px;
@@ -313,30 +333,32 @@ footer {
     font-family: "Georgia-ital2";
     font-size: 16px;
     outline: none; }
-.contact-wrapper .right-box .location {
-  padding-left: 27px;
-  background-image: url("../../img/markmini.png");
-  background-position: left 18%;
-  background-repeat: no-repeat;
-  width: 259px;
-  color: #4e4d4d;
-  margin-bottom: 25px; }
-.contact-wrapper .right-box .phone {
-  padding-left: 27px;
-  background-image: url("../../img/phonemini.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  font-size: 18px;
-  font-weight: bold;
-  color: #0c3883;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 33px; }
-.contact-wrapper .right-box .website {
-  padding-left: 27px;
-  background-image: url("../../img/chain.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  color: #4e4d4d; }
+.contact-wrapper .right-box {
+  padding-top: 21px; }
+  .contact-wrapper .right-box .location {
+    padding-left: 27px;
+    background-image: url("../../img/markmini.png");
+    background-position: left 18%;
+    background-repeat: no-repeat;
+    width: 259px;
+    color: #4e4d4d;
+    margin-bottom: 25px; }
+  .contact-wrapper .right-box .phone {
+    padding-left: 27px;
+    background-image: url("../../img/phonemini.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c3883;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 33px; }
+  .contact-wrapper .right-box .website {
+    padding-left: 27px;
+    background-image: url("../../img/chain.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #4e4d4d; }
 
 #map {
   height: 356px;
@@ -385,22 +407,48 @@ footer {
       margin-left: -116px; }
 
 .main-page-header {
+  position: relative;
   margin-bottom: 0px;
   height: 755px;
   background-image: url("../../img/bgh.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+  .main-page-header .arrow-group {
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    margin-left: -11px; }
   .main-page-header .inner-nav {
     padding-top: 65px;
     text-align: center; }
+    .main-page-header .inner-nav .button-group:last-child a:last-child {
+      padding: 9px 16px; }
+      .main-page-header .inner-nav .button-group:last-child a:last-child svg {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        top: 2px; }
+        .main-page-header .inner-nav .button-group:last-child a:last-child svg path, .main-page-header .inner-nav .button-group:last-child a:last-child svg circle {
+          fill: #0c3883; }
+    .main-page-header .inner-nav .button-group:last-child a:last-child:hover svg path, .main-page-header .inner-nav .button-group:last-child a:last-child:focus svg path {
+      fill: #fff; }
+    .main-page-header .inner-nav .button-group:last-child a:last-child:hover svg circle, .main-page-header .inner-nav .button-group:last-child a:last-child:focus svg circle {
+      fill: #fff; }
     .main-page-header .inner-nav a {
       padding: 11px 16px;
       color: #4e4d4d;
-      margin-left: -3px; }
-      .main-page-header .inner-nav a:hover {
+      margin-left: -4px; }
+      .main-page-header .inner-nav a:hover, .main-page-header .inner-nav a:focus {
         text-decoration: none;
         color: #fff; }
+      .main-page-header .inner-nav a:first-child svg {
+        width: 14px;
+        height: 14px;
+        position: relative;
+        top: 1px; }
+      .main-page-header .inner-nav a:first-child:hover svg path, .main-page-header .inner-nav a:first-child:focus svg path {
+        fill: white; }
     .main-page-header .inner-nav a, .main-page-header .inner-nav .button-group {
       display: inline-block; }
     .main-page-header .inner-nav .button-group {
@@ -437,7 +485,7 @@ footer {
       width: 128px;
       background-color: #fff;
       top: -2px;
-      right: 0;
+      right: -2px;
       box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3); }
     .main-page-header .yacht-marin-block:before {
       left: -2px; }

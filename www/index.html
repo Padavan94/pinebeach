@@ -9,17 +9,23 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.min.css">
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/hovers.css"  media="all">
 </head>
 <body>
 	<header class="main-page-header">
+		<div class="arrow-group">
+			<a href="#">
+				<img src="img/arrow-group.png" height="37" width="21" alt="button-group">
+			</a>
+		</div>
 		<div class="container">
 			<nav>
 				<div class="inner-nav">
 					<div class="button-group">
-						<a class="hvr-bounce-to-bottom" href="#"><img src="img/home.png" alt="home"></a>
+						<a class="hvr-bounce-to-bottom :focus" href="#"><img class="my_svg" src="img/home.svg" alt="home"></a>
 						<a class="hvr-bounce-to-bottom" href="#">Новости</a>
 						<a class="hvr-bounce-to-bottom" href="#">Услуги</a>
 						</div>
@@ -27,7 +33,7 @@
 					<div class="button-group">
 						<a class="hvr-bounce-to-bottom" href="#">Галерея</a>
 						<a class="hvr-bounce-to-bottom" href="#">Контакты</a>
-						<a class="hvr-bounce-to-bottom"  href="#"><img src="img/marker-mini.png" alt="marker"></a>
+						<a class="hvr-bounce-to-bottom"  href="#"><img class="my_svg" src="img/marker.svg" alt="marker"></a>
 					</div>
 				</div>
 			</nav>
@@ -103,7 +109,7 @@
 						<span class="img-wrap">
 							<img src="img/play.png" height="57" width="57" alt="icon">
 						</span>
-						<span>КП «Сосновый берег»</span>
+						<span>Видео</span>
 					</a>
 				</div>
 				<div class="nav-section my-hover">
@@ -111,7 +117,7 @@
 						<span class="img-wrap">
 							<img src="img/Untitled-1.png" height="57" width="57" alt="icon">
 						</span>
-						<span>КП «Сосновый берег»</span>
+						<span>Карта навигации</span>
 					</a>
 				</div>
 				<div class="nav-section my-hover">
@@ -127,7 +133,7 @@
 						<span class="img-wrap">
 							<img src="img/6ki.png" height="49" width="49" alt="icon">
 						</span>
-						<span>КП «Сосновый берег»</span>
+						<span>Услуги</span>
 					</a>
 				</div>
 				<div class="nav-section my-hover">
@@ -135,7 +141,7 @@
 						<span class="img-wrap">
 							<img src="img/mountains.png" height="45" width="59" alt="icon">
 						</span>
-						<span>КП «Сосновый берег»</span>
+						<span>Галерея</span>
 					</a>
 				</div>
 			</nav>
@@ -162,6 +168,8 @@
 	<![endif]-->
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->

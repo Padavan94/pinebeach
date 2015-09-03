@@ -2,17 +2,19 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	header .top-nav-header nav a{padding: 0 5px;}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.blue-nav-section nav .nav-section, .white-nav-section nav .nav-section, .nav-bottom-section nav .nav-section{float: none; width: 44%;display: inline-block; margin: 20px 0;}
+	.blue-nav-section, .white-nav-section, .nav-bottom-section{height: auto; text-align: center;}
+	.nav-bottom-section{background-position: center 143px;}
 }
 
 /* Extra Small Devices, Phones */

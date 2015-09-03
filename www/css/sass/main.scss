@@ -34,22 +34,43 @@ header{
 				svg{
 					width: 15px;
 					path{
-						fill: #fff !important;
+						fill: #fff ;
 					}
 				}
-				&:hover{
+				&:hover,&:focus{
 					text-decoration: none;
+					color: #00f6ff;
 				}
 				&:first-child{
 					top: 10px;
 				}
+				&:first-child:hover,&:first-child:focus{
+					svg{
+						path{
+							fill: #00f6ff;
+						}
+					}
+				}
 				&:last-child{
 					top: 34px;
+					svg{
+						path{
+							fill: #fff !important;
+						}
+					}
+				}
+				&:last-child:hover,&:last-child:focus{
+					svg{
+						path{
+							fill: #00f6ff !important;
+						}
+					}
 				}
 				&:nth-child(4){
 					top: -29px;
 					padding: 0 50px 0 50px;
 				}
+
 			}
 		}
 	}
@@ -73,14 +94,23 @@ header{
 .content-wrapper{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	color: #4e4d4d;
 	.service-row{
 		margin-bottom: 40px;
 	}
 	.services-boxes{
 		position: relative;
+		a{
+			color: #4e4d4d;
+			display: inline-block;
+			width: 48%;
+			@include clearfix;
+			&:hover,&:focus{
+				color: #4e4d4d;
+			}
+		}
 		.service-box{
 			text-align: center;
+			@include clearfix;
 		}
 		.service-icon{
 			height: 103px;
@@ -348,6 +378,7 @@ footer{
 		}
 	}
 	.right-box{
+		padding-top: 21px;
 		.location{
 			padding-left: 27px;
 			background-image: url("../../img/markmini.png");
@@ -428,23 +459,71 @@ footer{
 	}
 }
 .main-page-header{
+	position: relative;
 	margin-bottom: 0px;
 	height: 755px;
 	background-image: url("../../img/bgh.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	.arrow-group{
+		position: absolute;
+		bottom:54px; left:50%;
+		margin-left: -11px;
+	}
 	.inner-nav{
 		padding-top: 65px;
 		text-align: center;
+		.button-group:last-child{
+			a{
+				&:last-child{
+					padding: 9px 16px;
+					svg{
+						width: 18px;
+					    height: 18px;
+					    position: relative;
+					    top: 2px;
+					    path,circle{
+					    	fill: $color_b;
+					    }
+					}
+				}
+				&:last-child:hover, &:last-child:focus{
+					svg{
+						path{
+							fill: #fff;
+						}
+						circle{
+							fill: #fff;
+						}
+					}
+				}
+			}
+		}
 		a{
 			padding: 11px 16px;
 			color: #4e4d4d;
-			margin-left: -3px;
-			&:hover{
+			margin-left: -4px;
+			&:hover, &:focus{
 				text-decoration: none;
 				color: #fff;
 			}
+			&:first-child{
+				svg{
+					width: 14px;
+				    height: 14px;
+				    position: relative;
+				    top: 1px;
+				}
+			}
+			&:first-child:hover,&:first-child:focus{
+				svg{
+					path{
+						fill: white;
+					}
+				}
+			}
+			
 		}
 		a,.button-group{
 			display: inline-block;
@@ -486,7 +565,7 @@ footer{
 			height: 2px;
 			width: 128px;
 			background-color: #fff;
-			top:-2px; right:0;
+			top:-2px; right:-2px;
 			box-shadow: 0px 2px 1px rgba(0,0,0,.3);
 		}
 		&:before{
