@@ -33,7 +33,6 @@ header {
     height: 191px;
     background-color: #0c3883; }
     header .top-nav-header nav {
-      position: relative;
       text-align: center;
       margin-top: 50px;
       padding-left: 15px; }
@@ -86,7 +85,7 @@ header {
     .content-wrapper .services-boxes a {
       color: #4e4d4d;
       display: inline-block;
-      width: 48%; }
+      width: 100%; }
       .content-wrapper .services-boxes a::after {
         clear: both;
         content: "";
@@ -126,8 +125,8 @@ header {
   padding-top: 150px; }
   .blue-nav-section nav, .white-nav-section nav {
     display: block;
-    position: relative;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .blue-nav-section nav::after, .white-nav-section nav::after {
       clear: both;
       content: "";
@@ -237,13 +236,29 @@ footer {
     font-style: italic;
     margin-top: 2px;
     font-weight: bold; }
+  .news-page-wrapper .news-box h1 a {
+    text-decoration: none; }
+  .news-page-wrapper .news-box .back {
+    color: #0c3883;
+    font-size: 14px;
+    display: inline-block;
+    float: right;
+    padding: 5px; }
+    .news-page-wrapper .news-box .back a {
+      text-decoration: none; }
+    .news-page-wrapper .news-box .back i {
+      margin-right: 5px; }
+    .news-page-wrapper .news-box .back:hover {
+      background-color: #0c3883; }
+      .news-page-wrapper .news-box .back:hover a {
+        color: #fff; }
   .news-page-wrapper .news-box a {
     color: #0c3883;
     text-decoration: underline; }
     .news-page-wrapper .news-box a:hover {
       text-decoration: none; }
   .news-page-wrapper .news-box img {
-    margin: 0 18px 20px 0;
+    margin: 0 18px 12px 0;
     float: left;
     display: block; }
     .news-page-wrapper .news-box img::after {
@@ -426,7 +441,7 @@ footer {
       padding: 9px 16px; }
       .main-page-header .inner-nav .button-group:last-child a:last-child svg {
         width: 18px;
-        height: 18px;
+        height: 19px;
         position: relative;
         top: 2px; }
         .main-page-header .inner-nav .button-group:last-child a:last-child svg path, .main-page-header .inner-nav .button-group:last-child a:last-child svg circle {

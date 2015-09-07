@@ -22,7 +22,7 @@ header{
 		height: 191px;
 		background-color: $color_b;
 		nav{
-			position: relative;
+			
 			text-align: center;
 			margin-top: 50px;
    			padding-left: 15px;
@@ -102,7 +102,7 @@ header{
 		a{
 			color: #4e4d4d;
 			display: inline-block;
-			width: 48%;
+			width: 100%;
 			@include clearfix;
 			&:hover,&:focus{
 				color: #4e4d4d;
@@ -142,8 +142,8 @@ header{
 	nav{
 		display: block;
 		@include clearfix;
-		position: relative;
 		text-align: center;
+		position: relative;
 		.two-waves-img{
 			width: 96px;
 			height: 26px;
@@ -262,6 +262,31 @@ footer{
 			margin-top: 2px;
 			font-weight: bold;
 		}
+		h1{
+			a{
+				text-decoration: none;
+			}
+			
+		}
+		.back{
+			color: $color_b;
+			font-size: 14px;
+			display: inline-block;
+			float: right;
+			padding: 5px;
+			a{
+				text-decoration: none;
+			}
+			i{
+				margin-right: 5px;
+			}
+			&:hover{
+				background-color: $color_b;
+				a{
+					color: #fff;
+				}
+			}
+		}
 		a{
 			color: $color_b;
 			text-decoration: underline;
@@ -270,7 +295,7 @@ footer{
 			}
 		}
 		img{
-			margin: 0 18px 20px 0;
+			margin: 0 18px 12px 0;
 			float: left;
 			display: block;
 			@include clearfix;
@@ -321,6 +346,7 @@ footer{
 			margin-right: 22px;
 		}
 	}
+
 }
 /*contacts_page_content*/
 .contact-wrapper{
@@ -480,7 +506,7 @@ footer{
 					padding: 9px 16px;
 					svg{
 						width: 18px;
-					    height: 18px;
+					    height: 19px;
 					    position: relative;
 					    top: 2px;
 					    path,circle{

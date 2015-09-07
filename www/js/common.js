@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	forSVG();
-    //animation
+    /*-------------------------------
+    animation
+    --------------------------------*/
     $(".service-box").bind('mouseover', function() {
         $(this).find(".service-icon").animated("bounceIn");
     }).bind('mouseleave', function(event) {
@@ -11,9 +13,16 @@ $(document).ready(function() {
     }).bind('mouseleave', function(event) {
         $(this).removeClass('animated shake')
     });;
-        
-    });
+    
+    /*-------------------------------
+    footer rows swap
+    --------------------------------*/
+    if(window.innerWidth<768){
+        $(".f-left").before($(".f-center"));
+        $(".contact-wrapper .left-form").before($(".contact-wrapper .right-box"));
+    }
 
+    });
 
 
 

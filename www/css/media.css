@@ -8,6 +8,13 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	header .top-nav-header nav a{padding: 0 5px;}
+	.content-wrapper .service-row, .content-wrapper .service-row .service-box {margin-bottom: 20px;}
+	.content-wrapper .service-row{margin-bottom: 0;}
+	.main-page-header .inner-nav a {padding: 11px 5px;}
+	.main-text-wrapper .text-box{width: 760px;}
+	.main-text-wrapper .text-box img{left: 380px;}
+	.main-text-wrapper .text-box:after, .main-text-wrapper .text-box:before{width: 221px;}
+
 }
 
 /* Small Devices, Tablets */
@@ -15,12 +22,42 @@
 	.blue-nav-section nav .nav-section, .white-nav-section nav .nav-section, .nav-bottom-section nav .nav-section{float: none; width: 44%;display: inline-block; margin: 20px 0;}
 	.blue-nav-section, .white-nav-section, .nav-bottom-section{height: auto; text-align: center;}
 	.nav-bottom-section{background-position: center 143px;}
+	footer .f-left, footer .f-center, footer .f-right{text-align: center;}
+	.content-wrapper .service-row .service-box {margin-bottom: 20px;}
+	.content-wrapper .service-row{margin-bottom: 0;}
+	header .top-nav-header nav a:nth-child(4){position: absolute;left: 50%; top: 20px; margin-left: -161px;}
+	header .top-nav-header nav {margin-top: 91px;}
+	.blue-nav-section, .white-nav-section{padding-top: 75px;}
+	.nav-bottom-section{padding-top: 40px;     background-position: center 3px;}
+	header {margin-bottom: 30px;}
+	.contact-wrapper .right-box .location, .contact-wrapper .right-box .phone{margin-bottom: 12px;}
+	.left-form{margin-top: 25px;}
+	.main-page-header .inner-nav .logo {position: absolute;top: 0px;left: 50%;    margin-left: -116px;}
+	.main-page-header .inner-nav{margin-top: 137px; background-color: #fff; padding-top: 0;}
+	.main-page-header .inner-nav .button-group{background-color: transparent;}
+	.main-page-header .yacht-marin-block{width: 300px;    margin: 90px auto;}
+	.main-page-header{height: 576px;}
+	.main-text-wrapper{height: auto; padding: 70px 0; }
+	.main-text-wrapper .text-box{width: 400px; position: static; padding: 50px 20px 20px 20px; height: auto;}
+	.main-text-wrapper .text-box:after, .main-text-wrapper .text-box:before{width: 80px; display: none;}
+	.main-text-wrapper .text-box img{left: 50%; top: 46px;}
+	.main-text-wrapper .text-box:after, .main-text-wrapper .text-box:before{top: 68px; right: 127px;
+; width: 63px;}
+	.main-text-wrapper .text-box:before{left: 128px;}
+	.blue-nav-section nav .two-waves-img, .white-nav-section nav .two-waves-img{top: -38px;}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	header .top-nav-header nav a {padding: 0 3px;font-size: 12px;}
+	.blue-nav-section, .white-nav-section,.nav-bottom-section{padding-top: 20px;}
+	.nav-bottom-section {background-position: center 3px;}
+	.main-text-wrapper .text-box{width: 300px;}
+	.main-text-wrapper .text-box:before{left: 50px;}
+	.main-text-wrapper .text-box:after, .main-text-wrapper .text-box:before{right: 50px;width: 16px;}
+	.blue-nav-section nav .two-waves-img, .white-nav-section nav .two-waves-img{display: none;}
 }
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
