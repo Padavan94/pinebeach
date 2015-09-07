@@ -56,6 +56,7 @@
 	.main-text-wrapper .text-box:before{left: 50px;}
 	.main-text-wrapper .text-box:after, .main-text-wrapper .text-box:before{right: 50px;width: 16px;}
 	.blue-nav-section nav .two-waves-img, .white-nav-section nav .two-waves-img{display: none;}
+	.news-page-wrapper h1{font-size: 20px;}
 }
 
 
