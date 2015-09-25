@@ -3,22 +3,22 @@
   font-family: "Georgia";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("/fonts/Georgia.woff2") format("woff2"), url("/fonts/Georgia.woff") format("woff"), url("/fonts/Georgia.ttf") format("truetype"), url("/fonts/Georgia.svg#Georgia") format("svg"); }
+  src: url("/fonts/Georgia.ttf") format("truetype"); }
 @font-face {
   font-family: "Georgia-reg";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/GEORGIAB.eot?#iefix") format("embedded-opentype"), url("/fonts/GEORGIAB.woff2") format("woff2"), url("/fonts/GEORGIAB.woff") format("woff"), url("/fonts/GEORGIAB.ttf") format("truetype"), url("/fonts/GEORGIAB.svg#Georgia-reg") format("svg"); }
+  src: url("/fonts/GEORGIAB.ttf") format("truetype"); }
 @font-face {
   font-family: "Georgia-ital2";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/GEORGIAI.eot?#iefix") format("embedded-opentype"), url("/fonts/GEORGIAI.woff2") format("woff2"), url("/fonts/GEORGIAI.woff") format("woff"), url("/fonts/GEORGIAI.ttf") format("truetype"), url("/fonts/GEORGIAI.svg#Georgia-ital2") format("svg"); }
+  src: url("/fonts/GEORGIAI.ttf") format("truetype"); }
 @font-face {
   font-family: "Georgia-ital";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/GEORGIAZ.eot?#iefix") format("embedded-opentype"), url("/fonts/GEORGIAZ.woff2") format("woff2"), url("/fonts/GEORGIAZ.woff") format("woff"), url("/fonts/GEORGIAZ.ttf") format("truetype"), url("/fonts/GEORGIAZ.svg#Georgia-ital") format("svg"); }
+  src: url("/fonts/GEORGIAZ.ttf") format("truetype"); }
 body {
   font-family: "Georgia";
   font-weight: normal;
@@ -33,7 +33,6 @@ header {
     height: 191px;
     background-color: #0c3883; }
     header .top-nav-header nav {
-      position: relative;
       text-align: center;
       margin-top: 50px;
       padding-left: 15px; }
@@ -126,7 +125,8 @@ header {
   padding-top: 150px; }
   .blue-nav-section nav, .white-nav-section nav {
     display: block;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .blue-nav-section nav::after, .white-nav-section nav::after {
       clear: both;
       content: "";
@@ -236,13 +236,29 @@ footer {
     font-style: italic;
     margin-top: 2px;
     font-weight: bold; }
+  .news-page-wrapper .news-box h1 a {
+    text-decoration: none; }
+  .news-page-wrapper .news-box .back {
+    color: #0c3883;
+    font-size: 14px;
+    display: inline-block;
+    float: right;
+    padding: 5px; }
+    .news-page-wrapper .news-box .back a {
+      text-decoration: none; }
+    .news-page-wrapper .news-box .back i {
+      margin-right: 5px; }
+    .news-page-wrapper .news-box .back:hover {
+      background-color: #0c3883; }
+      .news-page-wrapper .news-box .back:hover a {
+        color: #fff; }
   .news-page-wrapper .news-box a {
     color: #0c3883;
     text-decoration: underline; }
     .news-page-wrapper .news-box a:hover {
       text-decoration: none; }
   .news-page-wrapper .news-box img {
-    margin: 0 18px 20px 0;
+    margin: 0 18px 12px 0;
     float: left;
     display: block; }
     .news-page-wrapper .news-box img::after {
@@ -425,7 +441,7 @@ footer {
       padding: 9px 16px; }
       .main-page-header .inner-nav .button-group:last-child a:last-child svg {
         width: 18px;
-        height: 18px;
+        height: 19px;
         position: relative;
         top: 2px; }
         .main-page-header .inner-nav .button-group:last-child a:last-child svg path, .main-page-header .inner-nav .button-group:last-child a:last-child svg circle {

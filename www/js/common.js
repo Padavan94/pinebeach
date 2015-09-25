@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    /*-------------------------------
+    bg slider
+    --------------------------------*/
+    $("#example, .main-page-header").vegas({
+        slides: [
+            { src: "/img/slide1.png" },
+            { src: "/img/slide2.png" },
+            { src: "/img/slide3.png" },
+            { src: "/img/slide4.png" }
+        ]
+    });
 	forSVG();
     /*-------------------------------
     animation
@@ -21,6 +32,7 @@ $(document).ready(function() {
         $(".f-left").before($(".f-center"));
         $(".contact-wrapper .left-form").before($(".contact-wrapper .right-box"));
     }
+    
 
     });
 
